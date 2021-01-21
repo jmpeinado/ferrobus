@@ -1,0 +1,34 @@
+<!DOCTYPE xhtml>
+<html id="login">
+<head>
+    <title>Prueba BBVA</title>
+    <meta charset="utf-8">
+    <meta lang="es_ES">
+    <meta lang="en_EN">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./moment.js"></script>
+    <script src="./moment-duration-format.js"></script>
+    
+    <script src="mycontroller.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div id="containerMain" class="container-main">
+        <span class="login-icon"></span>
+        <form id="login-form" class="login-form" action="http://localhost:3000" method="POST">
+            <div class="row">
+                <!--label for="userName" class="login-label label-name">User:</label-->
+                <input id="userName" name="userName" type="text" placeholder="User" class="login-input input-name" autofocus>
+            </div>
+            <div class="row">
+                <!--label for="userPass" class="login-label label-pass">Pass:</label-->
+                <input id="userPass" name="userPass" type="password" placeholder="Password" class="login-input input-pass">
+            </div>
+            <input type="submit" value="Log in" class="button-submit">
+        </form>
+        <span id="errorField" class="error-field"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+    <!DOCTYPE xhtml>
+    <html id="home">
+    <head>
+        <title>Prueba BBVA</title>
+        <meta charset="utf-8">
+        <meta lang="es_ES">
+        <meta lang="en_EN">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <script src="mycontroller.js"></script>
+        <script src="./moment.js"></script>
+        <script src="./moment-duration-format.js"></script>
+        
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body>
+        <div id="containerMain" class="container-main">
+            <label class="message-welcome">Welcome!</label>
+            <label class="message-info">The last time you accessed was </label>
+            <label id="time" class="time"></label>
+            
+            <input type="button" onclick="logout()" value="Log out" class="button-logout">
+            
+        </div>
+    </body>
+    </html>
